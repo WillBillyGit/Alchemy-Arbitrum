@@ -22,10 +22,15 @@ import RitualLog, { RitualMessage } from './components/RitualLog';
 
 const queryClient = new QueryClient();
 
+const alchemyKey = import.meta.env.VITE_ALCHEMY_API_KEY;
+const rpcUrl = alchemyKey 
+  ? `https://arb-mainnet.g.alchemy.com/v2/${alchemyKey}` 
+  : undefined;
+
 const config = createConfig({
   chains: [arbitrum],
   transports: {
-    [arbitrum.id]: http(),
+    [arbitrum.id]: http(rpcUrl),
   },
 });
 
