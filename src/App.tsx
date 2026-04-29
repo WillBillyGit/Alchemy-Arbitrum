@@ -14,6 +14,7 @@ import { arbitrum } from 'wagmi/chains';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { motion } from 'motion/react';
 import { Gem, ScrollText } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 import WalletAttunement from './components/WalletAttunement';
 import AethericPurifier from './components/AethericPurifier';
@@ -113,6 +114,7 @@ export default function App() {
             <span>Manifested by Ancient Arts</span>
           </footer>
         </div>
+        <Analytics />
       </QueryClientProvider>
     </WagmiProvider>
   );
