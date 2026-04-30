@@ -20,7 +20,16 @@ import WalletAttunement from './components/WalletAttunement';
 import AethericPurifier from './components/AethericPurifier';
 import AetherVault from './components/AetherVault';
 import RitualLog, { RitualMessage } from './components/RitualLog';
+import alchemyLogo from './src/derpy_wizard_sweeping.jpg'; // Make sure this path is exactly right
 
+function App() {
+  return (
+    <div>
+      {/* 2. Use the imported variable inside curly braces {} */}
+      <img src={alchemyLogo} alt="Alchemy Logo" />
+    </div>
+  );
+}
 const queryClient = new QueryClient();
 
 const alchemyKey = import.meta.env.VITE_ALCHEMY_API_KEY;
