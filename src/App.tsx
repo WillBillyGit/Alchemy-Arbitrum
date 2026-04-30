@@ -59,7 +59,7 @@ export default function App() {
               <div className="relative">
                 <div className="absolute -inset-2 bg-pink-500/20 blur-xl rounded-full animate-pulse"></div>
                 <img 
-                  src=src/"wizard_sweeping_potion_labels.jpg" 
+                  src="https://github.com/WillBillyGit/Alchemy-Arbitrum/blob/main/wizard_sweeping_potion_labels.jpg"
                   alt="High Alchemist" 
                   referrerPolicy="no-referrer"
                   className="w-16 h-16 rounded-full border-2 border-[#d4af37] shadow-[0_0_15px_rgba(212,175,55,0.4)] relative z-10"
