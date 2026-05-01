@@ -25,7 +25,7 @@ import alchemyLogo from './src/derpy_wizard_sweeping.jpg'; // Make sure this pat
 function App() {
   return (
     <div>
-      {/* 2. Use the imported variable inside curly braces {} */}
+      {./src/derpy_wizard_sweeping.jpg'}
       <img src={alchemyLogo} alt="Alchemy Logo" />
     </div>
   );
