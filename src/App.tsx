@@ -20,7 +20,7 @@ import WalletAttunement from './components/WalletAttunement';
 import AethericPurifier from './components/AethericPurifier';
 import AetherVault from './components/AetherVault';
 import RitualLog, { RitualMessage } from './components/RitualLog';
-import alchemyLogo from './src/derpy_wizard_sweeping.jpg'; // Make sure this path is exactly right
+import alchemyLogo from './derpy_wizard_sweeping.jpg'; // Make sure this path is exactly right
 
 const queryClient = new QueryClient();
 
@@ -60,7 +60,7 @@ export default function App() {
               <div className="relative">
                 <div className="absolute -inset-2 bg-pink-500/20 blur-xl rounded-full animate-pulse"></div>
                 <img 
-                  src="./src/derpy_wizard_sweeping.jpg"
+                  src={alchemyLogo}
                   alt="High Alchemist" 
                   referrerPolicy="no-referrer"
                   className="w-16 h-16 rounded-full border-2 border-[#d4af37] shadow-[0_0_15px_rgba(212,175,55,0.4)] relative z-10"
