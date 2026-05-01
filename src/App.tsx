@@ -22,14 +22,6 @@ import AetherVault from './components/AetherVault';
 import RitualLog, { RitualMessage } from './components/RitualLog';
 import alchemyLogo from './src/derpy_wizard_sweeping.jpg'; // Make sure this path is exactly right
 
-function App() {
-  return (
-    <div>
-      {./src/derpy_wizard_sweeping.jpg'}
-      <img src={alchemyLogo} alt="Alchemy Logo" />
-    </div>
-  );
-}
 const queryClient = new QueryClient();
 
 const alchemyKey = import.meta.env.VITE_ALCHEMY_API_KEY;
