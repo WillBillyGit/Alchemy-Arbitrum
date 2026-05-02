@@ -258,9 +258,7 @@ export const PURIFIER_ABI = [
     ],
     "stateMutability": "view",
     "type": "function"
-  }
-]
-  }
+   }
 ] as const;
 
 export const VAULT_ABI = [
