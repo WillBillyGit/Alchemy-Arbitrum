@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useAccount, useWriteContract, useReadContract } from 'wagmi';
-import { parseEther, formatEther } from 'viem';
+import { useAccount, useWriteContract, useReadContract } from 'wagmi'; 
+import { parseEther, formatEther, formatUnits } from 'viem';
 import { motion } from 'motion/react';
 import { ShieldCheck, Database, Droplets, Zap } from 'lucide-react';
 import { VAULT_ABI } from '../constants/abis';
