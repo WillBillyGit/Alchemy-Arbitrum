@@ -10,6 +10,19 @@ export const PURIFIER_ABI = [
     "inputs": [
       {
         "internalType": "address",
+        "name": "_newAlchemist",
+        "type": "address"
+      }
+    ],
+    "name": "appointAlchemist",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
         "name": "_router",
         "type": "address"
       },
@@ -59,38 +72,6 @@ export const PURIFIER_ABI = [
     ],
     "name": "SafeERC20FailedOperation",
     "type": "error"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "oldAlchemist",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "newAlchemist",
-        "type": "address"
-      }
-    ],
-    "name": "AlchemistAppointed",
-    "type": "event"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_newAlchemist",
-        "type": "address"
-      }
-    ],
-    "name": "appointAlchemist",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
   },
   {
     "anonymous": false,
@@ -277,6 +258,8 @@ export const PURIFIER_ABI = [
     ],
     "stateMutability": "view",
     "type": "function"
+  }
+]
   }
 ] as const;
 
